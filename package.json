@@ -1,0 +1,24 @@
+{
+  "name": "sql-employee-tracker",
+  "description": "This command-line application is designed to manage a company's employee database. The application uses Node.js, Inquirer, and MySQL to provide a user-friendly interface for non-developers to view and interact with the data stored in the database.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Renjithkumar993/SQL-Employee-Tracker.git"
+  },
+  "author": "Renjith Rajakumar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Renjithkumar993/SQL-Employee-Tracker/issues"
+  },
+  "homepage": "https://github.com/Renjithkumar993/SQL-Employee-Tracker#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^8.2.4",
+    "mysql2": "^3.2.0"
+  }
+}
