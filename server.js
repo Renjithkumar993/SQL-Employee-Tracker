@@ -1,28 +1,59 @@
 const cTable = require('console.table');
 const inquirer =  require("inquirer")
 const fs = require("fs")
+const main = require("./helpers/startingstyle")
+const questions  = require("./helpers/questions")
+const express = require('express');
 const mysql = require('mysql2');
+const PORT = process.env.PORT || 3001;
+const app = express();
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
+
+const db = mysql.createConnection(
+    {
+      host: 'localhost',
+
+      user: 'root',
+ 
+      password: "Thanvi143$",
+      database: 'employeetracker_db'
+    },
+    console.log(`Connected to the books_db database.`)
+  );
+
+async function promptStart (){
+await main();
+await inquirer.prompt(questions.addEmployee);
+}
+
+
+promptStart();
 
 
 
+    let roleData = [];
+ db.query('select * from role', function (err, results) {
+      for (let i = 0; i < results.length; i++) {
+        roleData.push(results[i].title);  
+      }
+      console.log(roleData);
+  
+    });
+
+    module.exports = roleData;
+
+  
+
+  app.use((req, res) => {
+    res.status(404).end();
+  });
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+  
 
 
 
-
-
-
-
-
-
-
-
-
-console.log("%c------------------------------------------------", "background-color: #FDB813; color: #FFFFFF; font-size: 1px; height: 10px;");
-console.log("%c    Welcome to the SVG Logo Maker App    ", "background-color: #FDB813; color: #FFFFFF; font-size: 36px; font-weight: bold; padding: 20px; text-align: center;");
-console.log("%c------------------------------------------------", "background-color: #FDB813; color: #FFFFFF; font-size: 1px; height: 10px;");
-console.log("%cCreate professional-quality logos in seconds!", "color: #262626; font-size: 18px; font-weight: bold; margin-top: 30px; text-align: center;");
-console.log("%cOur intuitive interface makes logo design a breeze.", "color: #262626; font-size: 16px; margin-top: 20px; margin-bottom: 20px; text-align: center;");
-console.log("%cWith a wide range of customization options, you can create logos that truly reflect your brand.", "color: #262626; font-size: 16px; text-align: center;");
-console.log("%c------------------------------------------------", "background-color: #FDB813; color: #FFFFFF; font-size: 1px; height: 10px;");
-
-;
+ 
