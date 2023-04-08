@@ -1,12 +1,8 @@
 
 const main = require("./helpers/startingstyle")
 
-const getstart =  require("./helpers/choiceRender")
-
-
-
-
 async function promptStart (){
+const { getstart } =await  require("./lib/main");
 await main();
 await getstart();
 }
