@@ -32,16 +32,17 @@ CREATE TABLE employee(
 );
 
 
-CREATE TABLE all_employeesdata
-(id INT PRIMARY KEY AUTO_INCREMENT,
-department_data INT,
-roles_data INT,
-employee_data INT,
+-- CREATE TABLE all_employeesdata
+-- (id INT PRIMARY KEY AUTO_INCREMENT,
+-- department_data INT,
+-- roles_data INT,
+-- employee_data INT,
 
-FOREIGN KEY (department_data) REFERENCES department(id) ,
-FOREIGN KEY (roles_data) REFERENCES roles(id),
-FOREIGN KEY (employee_data) REFERENCES employee(id)
+-- FOREIGN KEY (department_data) REFERENCES department(id) ,
+-- FOREIGN KEY (roles_data) REFERENCES roles(id),
+-- FOREIGN KEY (employee_data) REFERENCES employee(id)
 
-);
+-- );
+
 
 

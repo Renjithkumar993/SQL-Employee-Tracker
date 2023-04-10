@@ -18,3 +18,15 @@ ORDER BY e.id;
  select e.first_name,e.last_name ,department.name As deparment from employee e
  JOIN roles on e.role_id = roles.id
 JOIN  department on roles.department_id = department.id WHERE department_id = 4;
+
+
+
+
+select * from roles join department on roles.department_id = department.id;
+
+
+SELECT department.name AS deparment , SUM(roles.salary) AS Total
+FROM roles
+JOIN department ON roles.department_id = 3 = department.id
+GROUP BY department.name
+

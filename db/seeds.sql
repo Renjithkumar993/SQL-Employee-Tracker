@@ -1,16 +1,25 @@
 
 
-
-
 INSERT INTO department(name) 
 VALUES
+("Marketing"),
+("Human Resources"),
+("Operations"),
+("Customer Service"),
 ("Engineering"),
 ("Finance"),
 ("Legal"),
 ("Sales");
 
-
-INSERT INTO  roles (title,salary,department_id) VALUES
+INSERT INTO roles (title,salary,department_id) 
+VALUES
+("Marketing Coordinator", 45000, 1),
+("HR Manager", 70000, 2),
+("Operations Analyst", 55000, 3),
+("Customer Service", 40000, 4),
+("Software Developer", 90000, 3),
+("Sales Manager", 100000, 4),
+("Financial Analyst", 75000, 2),
 ("Office Administrator" , 35000,1),
 ("Marketing Manager", 60000, 2),
 ("Software Engineer", 80000, 3),
@@ -18,16 +27,31 @@ INSERT INTO  roles (title,salary,department_id) VALUES
 ("Sales Representative", 50000, 4),
 ("Graphic Designer", 40000, 1);
 
-INSERT INTO employee (first_name,last_name,role_id,manager_id) VALUES
-("Aswathy","karippathayil",1,NULL),
-("Sara", "Lee", 6, 1),
-("David", "Nguyen", 4, 1),
-("Emily", "Wang", 2, NULL),
-("Michael", "Kim", 5,4),
-("Alex", "Garcia", 4, 4),
+
+INSERT INTO employee (first_name,last_name,role_id,manager_id) 
+VALUES
+("John", "Doe", 5, NULL),
+("Emily", "Smith", 1, NULL),
+("Daniel", "Garcia", 2, NULL),
+("Jessica", "Lee", 4, NULL),
+("Kevin", "Kim", 6, NULL),
+("Maggie", "Chen", 3, 1),
+("Sophie", "Brown", 7,2),
+("Brian", "Wong", 5, 3),
+("Karen", "Nguyen", 1, 4),
+("Adam", "Taylor", 4, 5),
+("Erica", "Rivera", 6, 5),
+("Michelle", "Lee", 3, 5),
+("Tom", "Zhang", 2, 4),
+("Julia", "Park", 1, 4),
+("Samuel", "Choi", 4, 3),
+("Aswathy","karippathayil",1,3),
+("Sara", "Lee", 6, 2),
+("David", "Nguyen", 4, 2),
+("Emily", "Wang", 2, 1),
+("Michael", "Kim", 5,1),
+("Alex", "Garcia", 4, 1),
 ("Amit", "Sharma", 3, 1);
-
-
 
 
 
