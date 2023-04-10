@@ -19,6 +19,9 @@ Install the required dependencies by running the command npm install.
 Open the terminal and navigate to the project directory.
 Run the command node index.js to start the application.
 Follow the prompts to view, add, update, or delete departments, roles, and employees.
+Here is the link for the walkthorugh of this application - https://drive.google.com/file/d/11yBmxKA0lEOZVBmXoidwRvrlKaRPsX0S/view 
+
+![applicationwalkthrough](./helpers/appwalkthrough.webm)
 
 Here is the walkthrough 
 ## License

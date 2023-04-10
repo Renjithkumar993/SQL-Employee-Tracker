@@ -39,19 +39,19 @@ VALUES
 ("Sophie", "Brown", 7,2),
 ("Brian", "Wong", 5, 3),
 ("Karen", "Nguyen", 1, 4),
-("Adam", "Taylor", 4, 5),
+("Adam", "Taylor", 12, 5),
 ("Erica", "Rivera", 6, 5),
 ("Michelle", "Lee", 3, 5),
-("Tom", "Zhang", 2, 4),
-("Julia", "Park", 1, 4),
+("Tom", "Zhang", 12, 4),
+("Julia", "Park", 11, 4),
 ("Samuel", "Choi", 4, 3),
 ("Aswathy","karippathayil",1,3),
-("Sara", "Lee", 6, 2),
+("Sara", "Lee", 9, 2),
 ("David", "Nguyen", 4, 2),
 ("Emily", "Wang", 2, 1),
 ("Michael", "Kim", 5,1),
-("Alex", "Garcia", 4, 1),
-("Amit", "Sharma", 3, 1);
+("Alex", "Garcia", 12, 1),
+("Amit", "Sharma", 13, 1);
 
 
 

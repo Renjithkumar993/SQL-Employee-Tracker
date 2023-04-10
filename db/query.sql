@@ -30,3 +30,7 @@ FROM roles
 JOIN department ON roles.department_id = 3 = department.id
 GROUP BY department.name
 
+
+SELECT department.name where deparment.id = 4 AS Department, SUM(roles.salary) AS Total
+            FROM roles
+            JOIN department ON roles.department_id = 4= department.id GROUP BY department.name
